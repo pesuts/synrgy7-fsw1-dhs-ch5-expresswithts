@@ -1,5 +1,7 @@
-const router = require('express').Router()
-const peopleRouter = require('./peopleRouter')
+import express from 'express'
+const router = express.Router()
+
+import peopleRouter from './peopleRouter'
 
 router.use('/people', peopleRouter)
 
